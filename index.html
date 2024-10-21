@@ -11,29 +11,26 @@
 
 <body>
     <main>
-        <section class="section">
-            <div class="container_player">
-                <h1>Reproductor</h1>
-                <div class="container_album">
-                    <img src="" alt="" class="player_img">
-                    <h2 class="player_artist">Name music</h2>
-                    <h3 class="player_song">Author</h3>
+        <section id="sections">
+            <div class="container-player" id="container-player">
+                <h1>Play Music</h1>
+                <div class="controls">
+                  <audio class="player__audio" controls id="audio">
+                    <source src="" type="audio/mpeg">
+                  </audio>
+                  <div class="player_controls">
+                <div class="player_controls">
+                    <i class="bx bx-skip-previus" id="previus"></i>
+                    <i class="bx bx-rewind" id="rewind"></i>
+                    <i class="bx bx-stop" id="stop"></i>
+                    <i class="bx bx-fast-forward" id="forward"></i>
+                    <i class="bx bx-skip-next" id="next"></i>
                 </div>
             </div>
-            <div class="controls">
-                <audio class="player_audio" controls id="audio" src="">
-                    <source src="" type="audio/mpeg">
-                </audio>
-                <div class="player_controls">
-                    <i class="bx bx-rewind" id="rewind"></i>
-                    <i class="bx bx-play" id="play"></i>
-                    <i class="bx bx-stop" id="stop"></i>
-                    <i class="bx bx-pause" id="pause"></i>
-                    <i class="bx bx-fast-forward" id="forward"></i>
-                </div>
             </div>
         </section>
-        <script src="js/script.js"></script>
+        <script type="module" src="js/script.js"></script>
+        <script type="module" src="js/songs.js"></script>
     </main>
 </body>
 
