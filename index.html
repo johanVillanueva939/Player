@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/4211/4211344.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles/style.css">
     <title>Reproductor</title>
@@ -12,25 +13,24 @@
 <body>
     <main>
         <section id="sections">
-            <div class="container-player" id="container-player">
+            <div class="container-player" id="container_player">
                 <h1>Play Music</h1>
                 <div class="controls">
-                  <audio class="player__audio" controls id="audio">
-                    <source src="" type="audio/mpeg">
-                  </audio>
-                  <div class="player_controls">
-                <div class="player_controls">
-                    <i class="bx bx-skip-previus" id="previus"></i>
-                    <i class="bx bx-rewind" id="rewind"></i>
-                    <i class="bx bx-stop" id="stop"></i>
-                    <i class="bx bx-fast-forward" id="forward"></i>
-                    <i class="bx bx-skip-next" id="next"></i>
+                    <audio class="player_audio" controls id="audio">
+                        <source src="" type="audio/mpeg">
+                    </audio>
+                    <div class="player_controls">
+                        <i class="bx bx-skip-previous" id="previous"></i>
+                        <i class='bx bx-rewind' id="rewind"></i>
+                        <i class='bx bx-stop' id="stop"></i>
+                        <i class='bx bx-fast-forward' id="forward"></i>
+                        <i class='bx bx-skip-next' id="next"></i>
+                    </div>
                 </div>
             </div>
-            </div>
         </section>
-        <script type="module" src="js/script.js"></script>
         <script type="module" src="js/songs.js"></script>
+        <script type="module" src="js/script.js"></script>
     </main>
 </body>
 
